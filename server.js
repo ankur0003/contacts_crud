@@ -14,6 +14,7 @@ app.use(cors())
 app.use(express.json())
 app.use('/api/contacts',require("./routes/routes"))
 app.use('/api/user',require("./routes/user_routes"))
+app.use('/api/data',require("./routes/admin_routes"))
 app.use( errorHandler)
 
 app.listen(port,()=>{
